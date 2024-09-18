@@ -143,7 +143,6 @@ footer {
   margin-top: auto;
 }
 
-/* Responsividade para telas pequenas */
 @media (max-width: 768px) {
   header .logo {
     max-width: 50px;
@@ -174,7 +173,6 @@ footer {
   }
 }
 
-/* Responsividade para telas menores, como celulares */
 @media (max-width: 480px) {
   header .logo {
     max-width: 40px;
