@@ -172,6 +172,10 @@ footer {
   button {
     padding: 8px;
   }
+
+  form h2 {
+    font-size: 20px; /* Ajusta o tamanho do h2 para telas pequenas */
+  }
 }
 
 /* Responsividade para telas menores, como celulares */
@@ -197,5 +201,9 @@ footer {
   button {
     padding: 7px;
     font-size: 14px;
+  }
+
+  form h2 {
+    font-size: 18px; /* Ajusta ainda mais o tamanho do h2 para telas pequenas */
   }
 }
