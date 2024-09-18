@@ -20,17 +20,18 @@ header {
   padding: 20px 0;
   text-align: center;
   position: relative;
+  overflow: hidden; /* Adiciona overflow hidden para evitar sobreposição */
 }
 
 header .logo {
   filter: opacity(80%) brightness(90%);
   border-radius: 75px;
-  filter: drop-shadow(0 0 1rem rgb(59, 37, 70));
   box-shadow: 1px 1px 1rem rgb(47, 4, 66);
   position: absolute;
-  top: 10px;
+  top: 20px; /* Aumenta a distância do topo */
   left: 20px;
   max-width: 70px;
+  z-index: 10;
 }
 
 header .container {
@@ -86,14 +87,12 @@ main {
 }
 
 form {
-  filter: drop-shadow(0 0 0.4rem #290606);
   box-shadow: 0.5px 0.5px 0.4rem #461414;
   max-width: 400px;
   margin: 30px auto;
   background: #f7f7f7;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form h2 {
@@ -116,7 +115,6 @@ input {
 }
 
 button {
-  filter: drop-shadow(0 0 0.4rem #290606);
   box-shadow: 0.5px 0.5px 0.4rem #461414;
   width: 100%;
   padding: 10px;
@@ -125,6 +123,8 @@ button {
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.5;
   transition: background 0.3s ease;
 }
 
@@ -143,10 +143,11 @@ footer {
   margin-top: auto;
 }
 
+/* Responsividade para telas pequenas */
 @media (max-width: 768px) {
   header .logo {
     max-width: 50px;
-    top: 5px;
+    top: 15px; /* Ajusta a distância do topo para telas menores */
   }
 
   nav a {
@@ -173,10 +174,11 @@ footer {
   }
 }
 
+/* Responsividade para telas menores, como celulares */
 @media (max-width: 480px) {
   header .logo {
     max-width: 40px;
-    top: 0;
+    top: 10px; /* Ajusta a distância do topo para telas ainda menores */
   }
 
   nav a {
@@ -194,5 +196,6 @@ footer {
 
   button {
     padding: 7px;
+    font-size: 14px;
   }
 }
