@@ -1,11 +1,9 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilos do corpo */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -16,31 +14,27 @@ body {
   min-height: 100vh;
 }
 
-/* Cabeçalho */
 header {
   background-color: #290606;
   color: #FFFFFF;
   padding: 20px 0;
   text-align: center;
-  position: relative; /* Necessário para posicionar a logo */
+  position: relative; 
 }
 
-/* Logo */
 header .logo {
   border-radius: 75px;
   position: absolute;
-  top: 10px; /* Ajuste para evitar sobreposição */
+  top: 10px; 
   left: 20px;
   max-width: 70px;
 }
 
-/* Container centralizado */
 header .container {
   width: 90%;
   margin: 0 auto;
 }
 
-/* Menu de navegação */
 nav {
   margin-top: 10px;
 }
@@ -57,7 +51,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Área principal */
 main {
   padding: 20px;
   text-align: center;
@@ -66,13 +59,11 @@ main {
   box-sizing: border-box;
 }
 
-/* Seção de vídeos */
 #videos {
   display: block;
   margin-top: 20px;
 }
 
-/* Item de mídia */
 .media-item {
   margin-bottom: 20px;
   text-align: center;
@@ -83,16 +74,14 @@ main {
   font-size: 22px;
 }
 
-/* Vídeos responsivos */
 .media-item iframe {
   width: 100%;
   height: auto;
   max-width: 800px;
-  aspect-ratio: 16 / 9; /* Mantém a proporção do vídeo */
+  aspect-ratio: 16 / 9; 
   border: none;
 }
 
-/* Formulário */
 form {
   filter: drop-shadow(0 0 0.4rem #290606);
   box-shadow: 0.5px 0.5px 0.4rem #461414;
@@ -108,7 +97,6 @@ form h2 {
   text-align: center;
 }
 
-/* Estilo dos rótulos */
 label {
   display: block;
   margin-bottom: 8px;
@@ -116,7 +104,6 @@ label {
   color: rgb(49, 19, 63);
 }
 
-/* Estilo dos campos de entrada */
 input {
   width: 100%;
   padding: 10px;
@@ -125,7 +112,6 @@ input {
   border-radius: 5px;
 }
 
-/* Botão */
 button {
   filter: drop-shadow(0 0 0.4rem #290606);
   box-shadow: 0.5px 0.5px 0.4rem #461414;
@@ -143,7 +129,6 @@ button:hover {
   background: #472121;
 }
 
-/* Rodapé */
 footer {
   background: #290606;
   color: #fff;
