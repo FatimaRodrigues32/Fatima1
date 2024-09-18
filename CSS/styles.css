@@ -26,7 +26,7 @@ header {
 header .logo {
   filter: opacity(80%) brightness(90%);
   border-radius: 75px;
-  box-shadow: 1px 1px 1rem rgb(47, 4, 66);
+  box-shadow: 1px 1px 1rem #290606;
   position: absolute;
   top: 20px; /* Aumenta a distância do topo */
   left: 20px;
