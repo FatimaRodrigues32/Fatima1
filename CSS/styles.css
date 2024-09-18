@@ -19,13 +19,16 @@ header {
   color: #FFFFFF;
   padding: 20px 0;
   text-align: center;
-  position: relative; 
+  position: relative;
 }
 
 header .logo {
+  filter: opacity(80%) brightness(90%);
   border-radius: 75px;
+  filter: drop-shadow(0 0 1rem rgb(59, 37, 70));
+  box-shadow: 1px 1px 1rem rgb(47, 4, 66);
   position: absolute;
-  top: 10px; 
+  top: 10px;
   left: 20px;
   max-width: 70px;
 }
@@ -78,7 +81,7 @@ main {
   width: 100%;
   height: auto;
   max-width: 800px;
-  aspect-ratio: 16 / 9; 
+  aspect-ratio: 16 / 9;
   border: none;
 }
 
@@ -138,4 +141,60 @@ footer {
   position: relative;
   width: 100%;
   margin-top: auto;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  header .logo {
+    max-width: 50px;
+    top: 5px;
+  }
+
+  nav a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  .media-item h3 {
+    font-size: 18px;
+  }
+
+  .media-item iframe {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  form {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  button {
+    padding: 8px;
+  }
+}
+
+/* Responsividade para telas menores, como celulares */
+@media (max-width: 480px) {
+  header .logo {
+    max-width: 40px;
+    top: 0;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  .media-item h3 {
+    font-size: 16px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  button {
+    padding: 7px;
+  }
 }
